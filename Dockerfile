@@ -1,3 +1,3 @@
 FROM ghcr.io/berriai/litellm:main-latest
-COPY config.yamln /app/config.yaml
+COPY config.yaml /app/config.yaml
 CMD ["--config", "/app/config.yaml", "port", "4000"]
